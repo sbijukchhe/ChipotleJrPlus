@@ -144,10 +144,35 @@ public class ChipotleJrPlus {
 
         Random r = new Random();
         int rndNum = r.nextInt(4)+5;
-        List<String> myBurrito = burrito.subList(0, rndNum);
 
-        System.out.println("Burrito" + burrito);
-            System.out.println("My Burrito" + myBurrito);
+        // use this later good
+        //List<String> myBurrito = burrito.subList(0, rndNum);
+
+        //////////////////////////////
+
+        //Adding elements
+        List<ArrayList<String>> mainList = new ArrayList<ArrayList<String>>();
+        List<String> myBurrito = burrito.subList(0, rndNum);
+        for(int i=0;i<10;i++) {
+            for(int j=i+1;j<10;j++){
+                //Do something and add elements to subList
+                // subList.add(element[j]) }
+            //mainList.add(subList);
+
+            // When I clear subList mainList is also getting cleared. I want to add the elements of subList to mainList. I was able to do it with loops but how to do this way
+            //subList.clear();
+        //}
+
+        //Printing, How do I get the elements from mainList which will have subLists
+        for(Integer i:mainList){
+            System.out.println(i);
+        }
+    }
+
+
+
+        //System.out.println("Burrito" + burrito);
+        System.out.println("My Burrito" + myBurrito);
 
 
 
